@@ -1,0 +1,6 @@
+name: ServerMaintenance
+version: 1.0.0-SNAPSHOT
+api: 1.0.0
+author: Mundschutziii
+main: net.lldv.servermaintenance.ServerMaintenance
+description: Set your server in maintenance mode during system works

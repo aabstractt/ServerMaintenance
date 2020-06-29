@@ -1,0 +1,17 @@
+# - - - System messages - - -
+
+prefix: "&8» &cMaintenance &8| &7"
+no-permission: "&cYou have insufficient permissions to execute this command."
+
+maintenance-set: "&7Maintenance was set to &e[0]&7."
+invalid-set: "&cPlease provide a valid value: &etrue, false"
+maintenance-already-set: "&cMaintenance mode is already &e[0]&c."
+timer-started: "&7Maintenance is starting in &e[0] minutes&7."
+invalid-time: "&cPlease provide a valid time in minutes."
+already-timer: "&cA timer is already running."
+countdown-pl: "&cMaintenance starts in &e[0] &cseconds."
+countdown-sg: "&cMaintenance starts in &e[0] &csecond."
+maintenance-active: "&aThis server is now in maintenance."
+maintenance-kick: "&cWe are currently in maintenance.\n&cWe are available soon!"
+help-set: "&7/[0] set <true|false> &8- &eEnable or disable the maintenance mode."
+help-timer: "&7/[0] timer <minutes> &8- &eStart the maintenance countdown."

@@ -1,0 +1,16 @@
+Maintenance: false
+Announcements:
+  - 300
+  - 120
+  - 60
+  - 30
+  - 10
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+
+Commands:
+  Maintenance: "maintenance"
+  MaintenanceDescription: "Maintenance management commands"
