@@ -2,18 +2,18 @@ package net.lldv.servermaintenance.listeners;
 
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
-import cn.nukkit.event.player.PlayerLoginEvent;
+import cn.nukkit.event.player.PlayerPreLoginEvent;
 import net.lldv.servermaintenance.components.managers.MaintenanceManager;
 import net.lldv.servermaintenance.components.tools.Language;
 
 public class EventListener implements Listener {
 
     @EventHandler
-    public void on(PlayerLoginEvent event) {
-        if (MaintenanceManager.isMaintenance() && !event.getPlayer().hasPermission("maintenance.join")) {
-            event.setKickMessage(Language.getNP("maintenance-kick"));
-            event.setCancelled(true);
+    public void onPlayerPreLoginEvent(PlayerPreLoginEvent ev) {
+        if (MaintenanceManager.isMaintenance() && !ev.getPlayer().hasPermission("maintenance.join")) {
+            ev.setKickMessage(Language.getNP("maintenance-kick"));
+
+            ev.setCancelled(true);
         }
     }
-
 }
